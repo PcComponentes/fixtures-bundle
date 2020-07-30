@@ -19,7 +19,7 @@ final class FixturesRegistryCompilerPass implements CompilerPassInterface
         }
 
         $definition = $container->findDefinition(FixturesRegistry::class);
-        $taggedServices = $container->findTaggedServiceIds('pccom.fixture');
+        $taggedServices = $container->findTaggedServiceIds(FixturesExtension::PCCOM_FIXTURE_TAG);
 
         foreach (\array_keys($taggedServices) as $serviceId) {
             $definition->addMethodCall('addFixture', [new Reference($serviceId)]);
