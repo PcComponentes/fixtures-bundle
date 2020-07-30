@@ -1,0 +1,29 @@
+{
+  "name": "pccomponentes/fixtures-bundle",
+  "description": "Fixtures Bundle for Symfony",
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "Aarón Bernabeu Rodríguez",
+      "email": "aaron.bernabeu@pccomponentes.com"
+    },
+    {
+      "name": "Zoilo Mora",
+      "email": "zoilo.mora@pccomponentes.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PcComponentes\\FixturesBundle\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.4",
+    "symfony/http-kernel": "^4.4|^5.0",
+    "symfony/dependency-injection": "^4.4|^5.0"
+  },
+  "require-dev": {
+    "pccomponentes/coding-standard": "^1.1"
+  }
+}
